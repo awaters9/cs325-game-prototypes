@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello! Amaze!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>The Wrong Weapon</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+This game combines the intense gameplay of bullet-hells with lethal league style gameplay.
+</li>
+
+<li><strong>Technical Merit:</strong>
+When the player goes to swing a bullet away, depending on the players timing, the bullet's rotation is affected by this aspect of player skill. This would be imperessive if this were actually implemented. At the moment the player can change the velocity and angle of all the bullets and sometimes the sword will affect the bullets also.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+The hardest part about this prototype was learning what I needed to know. Picking up a new game engine is never easy. And getting physic colliders to function properly is very difficult.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I made the art assets from scratch
+Got the sound file from here
+<ul>
+<li>Sword sound: <a href=http://soundbible.com/1176-Sword-Swing.html>Sword sound</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+This game is closely related to lethal league. The player can hit a projectile that bounces off the screen edges. If the player gets hit, then they dead.
+I learned a lot of code from various youtube videos that discussed similiar techniques. Instead of making pristine code it's all kind of a jumbled mess so that I could accomplish what I wanted to get done.
+<ul>
+	<li> Physic assistance: <a href="https://www.youtube.com/watch?v=Woy24SLt0nw&list=PLfdtiltiRHWHHYWSsb_0V3k6CFxDhjFtS&index=9">Breaker Game</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Dodge and deflect for as long as you can fool; you just brought a knife to a gun fight.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+I wanted to use a simple theme. Not many colors and nothing too artsy.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Dynamic box colliders that send projectile objects flying in different directions.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel stressed but also have a desire to get better. The player should want to increase their score as high as possible. When the player is skilled at the game they will feel a sense of pride. The reward is personal skill.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player is allowed to move from side to side and jump. As well as throw out 2 directional inputs that determine which side they may swing their sword.
+	Using the ARROW KEYS will let the player move and jump
+	Using the A and D keys will determine which side the player wants to attack.
+The player is expected to prevent themself from getting hit by a bullet for as long as possible. All of the inputs given will assist them with this one goal. The bullets that the player must avoid will constantly bounce all over the screen and is expected to increase in their velocity every time it bounces. What isn't in the prototype is a score system and a proper GAME OVER screen.
+</li>
+
+<li><strong>Strategies:</strong>
+The best strategy is game awareness. This game exercises the players ability to keep watch of all the bullets moving around the screen at deciding when to deflect.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+There is no backstory and there aren't any character designs in mind. The gameworld is rather dark and bleak with simple objects and high constrast colors. The player plays a lil cube who's only goal in life is to survive for as long as possible and is skilled at deflecting bullets with it's tiny sword. The gameplay will grow in intensity the longer the game goes on. Eventually the player will lose.
+</li>
+
+<li><strong>Target Audience:</strong>
+People who enjoy simple arcade games with one key mechanic and also enjoy the times playing flash games on the internets from the 2000s.
+</li>
+
+<li><strong>Play Time:</strong>
+This is up to the player. It's up to you to see how long you can go!
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
