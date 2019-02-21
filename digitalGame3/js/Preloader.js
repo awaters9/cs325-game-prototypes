@@ -34,9 +34,9 @@ BasicGame.Preloader.prototype = {
         this.load.spritesheet('enemy1', 'assets/mort.png', 24, 24);
         this.load.spritesheet('enemy2', 'assets/tard.png', 24, 24);
         this.load.spritesheet('enemy3', 'assets/vita.png', 24, 24);
-        
+
         this.load.tilemap('tilemap', 'assets/SchoolTiles.json', null, Phaser.Tilemap.TILED_JSON);
-        this.load.image('tiles', 'assets/tilemap.png');
+        this.load.image('tiles', 'assets/tileMap.png');
         this.load.tilemap('lockerMap', 'assets/lockers.json', null, Phaser.Tilemap.TILED_JSON);
         this.load.image('lockerTiles', 'assets/Lockers.png');
 
