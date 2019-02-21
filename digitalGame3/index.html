@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Phaser Basic Project Template</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/Win.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>The First Dino of Summer</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Not often you see a Dinosaur attending school hmmm?
+</li>
+
+<li><strong>Technical Merit:</strong>
+Randomly places the score objective and which lane the enemy will spawn on. The world moves faster the more points the player accrues.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned about the importance of textures and that fast moving tiles are not comfortable on the eyes.
+I also got to learn more about javascript and the way that Phaser handles changing scenes. The easiest part to making this project was setting up the environment. The more challenging aspect was learning more of Phaser's unintuitive scoping. Trying to figure out how to add events and why things operate the way they do is always a challenge. This way of game making is a tad on the higher level of things. The tutorial and example code that are provided by Phaser are comical in their usability. It's a library that's supposed to take the headache out of creating games yet the example codes don't provide much application to actual game mechanics. Frustrating.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I had to get a majority of my assets from other sources.
+<ul>
+<li>Loading screen: stolen from teacher</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Stock Photos: <a href="https://www.vectorstock.com/royalty-free-vector/cartoon-student-dinosaur-vector-2294706">Student Dino</a></li>
+<li>Stock Photos: <a href="https://patch.com/connecticut/greenwich/connecticuts-top-100-public-high-schools-new-rankings-released">School Hall</a></li>
+<li>Stock Photos: <a href="http://www.penang.ws/penang-attractions/beach.htm">Beach Shot</a></li>
+<li>Stock Photos: <a href="https://static.comicvine.com/uploads/original/7/72463/1901677-tumblr_ljuvtarn3i1qzjkcpo1_500.jpg">Ravesaurus</a></li>
+<li>Dino Pixel Characters: <a href="https://arks.itch.io/dino-characters/download/eyJleHBpcmVzIjoxNTUwNzE2NTk5LCJpZCI6MTgwMTczfQ%3d%3d.dWeRPbZ9dHMWJn1ZRdAvlVpMeWY%3d">Dino Characters</a></li>
+<li>Sound Effect: <a href="https://www.zapsplat.com/music/game-tone-single-coin-collect-1/">Paper Grab</a></li>
+<li>Sound Effect: <a href="http://www.orangefreesounds.com/roblox-death-sound/">Hurt Sound</a></li>
+<li>Music: "Poppers and Prosecco" Kevin MacLeod (<a href="incompetech.com">incompetech.com</a>). Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+ I know there are other games like this that I've played before but the unfortunate bit is how unremarkable they are. The concept alone has been improved upon to what is now known as Temple Run. This game is like Temple Run with a lot of gutted mechanics.
+<ul>
+<li>The code for this example is adapted from the <a href="https://github.com/photonstorm/phaser/tree/v2.6.2/resources/Project%20Templates/Basic">Phaser Basic Project Template</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+A lane runner where a dino collects his final grades and avoids other students to be the first dino to leave school.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+INPUTS:
+	UP ARROW: Shifts the player UP one lane
+	DOWN ARROW: Shifts the player DOWN one lane
+
+RANDOMNESS:
+	Random dinosaurs appear in the lanes to act as obstacles.
+	Graded papers spawn and are there to be collected!
+
+PlAY STYLE:
+	This game exploits a user's reaction time. There is also a risk for reward where each time the player collects a paper, the player then moves faster.
+
+GENRE:
+	It's a Temple Run kinda game
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This game tests a player's reaction time and game awareness to make quick decisions in order to win.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players should feel like there is a risk for reward. Where the higher the score gets, the more difficult the game becomes.
+</li>
+
+<li><strong>Gameplay:</strong>
+This game only allows players to press 2 keyboard buttons. Players can move up and down where their main goal is to avoid other dinosaurs and pick up papers in order to be the first dinosaur to leave school for summer break. As you collect more papers, the speed increases. Collect 10 pieces of paper to win the game. Avoid getting vertigo!
+</li>
+
+<li><strong>Strategies:</strong>
+Players who can focus and have quick reaction time will do well playing this game.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+In this world, dinosaurs attend grade school. You play as a blue dino who's trying to collect his final grade papers so he can leave school and enjoy his summer break! The gameplay can make for some dramatic moments where the player is moving so fast that it's hard to focus on him and what you must avoid. Beyond this, the game is a casual experience.
+</li>
+
+<li><strong>Target Audience:</strong>
+This game is targeted for young audiences.
+</li>
+
+<li><strong>Play Time:</strong>
+Takes about two minutes to play.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
