@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Phaser Basic Project Template</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/Game2.js"></script>
+	<script src="js/Game3.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Feed Me, I'm Small</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+It's a puzzle game about understanding player size
+</li>
+
+<li><strong>Technical Merit:</strong>
+The more the player consumes the larger the player object becomes. Making it impossible to traverse through certain parts of the map
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about level design and how to design a level to highlight the game's mechanics. The easiest part was designing the mechanic but the most troublesome part was figuring out interesting levels for the player to explore.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+<ul>
+<li>Loading screen: stolen from teacher</li>
+<li>Title Image: self-made</li>
+<li>Hippo asset: self-made</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Food Assets <a href="https://vectorpixelstar.itch.io/food/download/eyJleHBpcmVzIjoxNTUxMzMwODI4LCJpZCI6MzQxMjAyfQ%3d%3d.lB%2faGJtJnKA44C8KQnn%2bzHXGILE%3d">Pixel Fruit</a></li>
+<li>Tile Assets: <a href="https://opengameart.org/content/generic-platformer-tiles">Platform Assets</a></li>
+<li>Background: <a href="https://savvycow.itch.io/loudypixelsky/download/eyJleHBpcmVzIjoxNTUxMzcyMTA1LCJpZCI6MzQ0NzUzfQ%3d%3d.PcJbbk2sItqtLzRp07rAUXf%2fr%2b0%3d">Day Sky</a></li>
+
+<li>Eating Noise <a href="https://www.youtube.com/watch?v=u8dmjMgaMdc">Heavy Eats Sandvich</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+That game where you roll a sticky ball and collect things reminds me of this kinda game. Except this one has a puzzle element to it.
+<ul>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You are a hippo who must eat every fruit to proceed to the next level.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+There is no randomness to the game. You may move left, right, and jump. This type of game is a platformer that emphasizes puzzle elements.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This game is evaluating the player's critical thinking skills and dexterity to solve puzzles and avoid messing yourself up.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to think about the best route to navigate through levels. Sometimes, players must also have skill in order to make the correct jumps while avoiding the objective.
+Sometimes players must backtrack.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player can use the LEFT and RIGHT ARROW KEYS to move side to side.
+The SPACEBAR allows the player to JUMP.
+The R button RESETS the level.
+The core mechanic consists of navigating a level and eat all the fruit. The game is meant to be a puzzle while incorporating platforming elements. Most of the diversity in this game will come with level designs.
+</li>
+
+<li><strong>Strategies:</strong>
+Players may want to explore a level first in order to get an idea for what to do. Having platforming skills will also assist the player in completing challenging levels.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+You are a hippo who only dreams of gorging on various fruits no matter how humongous he becomes. Explore lush green environments to find the sweet fruits, but be careful; sometimes the world doesn't want the hippo to reach such delights. Game tension doesnt exist. The challenge comes with the player's ability to figure out a level's puzzle.
+</li>
+
+<li><strong>Target Audience:</strong>
+This game will appeal to children and even young adults who appreciate challenging platform puzzles.
+</li>
+
+<li><strong>Play Time:</strong>
+The prototype takes about 3 minutes
+</li>
+
+</ul>
+</div>
+</body>
+</html>
