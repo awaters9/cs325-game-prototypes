@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Phaser Basic Project Template</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>B O D Y G U A R D (read Gameplay for controls)</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Instead of avoiding bullets, it's your objective to run into them.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The player movement is fluid and responsive. The bullets spawn at random locations with random trajectories and their sprite angle is calculated to represent where they are moving. The president moves back and forth randomly.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: ripped from teacher</li>
+<li>Title Screen: self-made</li>
+<li>Gunshot: <a href="https://freesound.org/people/RSilveira_88/sounds/216312/">Gunshot</a></li>
+<li>Clink: <a href="https://www.soundsnap.com/tags/clink">Marbles hitting sheet metal 1</a></li>
+<li>Dead: <a href="https://www.youtube.com/watch?v=3fqYMRCyq_g">Heavy You are dead</a></li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+This game is an iteration from my first Digital Assignment and is based off the Future President theme.
+</li>
+
+<li><strong>High Concept:</strong>
+Maneuver as quickly as possible to prevent the president from being struck from a stray bullet.
+</li>
+
+<li><strong>Theme:</strong>
+This game is based of the theme of future president. (at least the mechanic is).
+</li>
+
+<li><strong>Mandated Variety:</strong>
+This game relies on quick button presses and fast thinking. Because bullets spawn randomly with random trajectories and it is up to the player to prevent the president from being struck once.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This game is evaluating the responsiveness of a player and the player character. The game should be responsive to the player's inputs and the player should understand how the game functions.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel overwhelmed but remain focused. Once they get into a flow and can visualize what to respond to, the game becomes a fast-paced, enjoyable experience.
+</li>
+
+<li><strong>Gameplay:</strong>
+LEFT & RIGHT ARROW KEYS: move the player left and right.
+UP ARROW KEY: lets the player jump.
+DOWN ARROW KEY: lets the player fast fall.
+Tip:
+	You move faster and have more control when you are grounded.
+
+The player's main goal is to block the incoming bullets from touching the president (the gold circle). 
+</li>
+
+<li><strong>Strategies:</strong>
+The player will want to remove as many bullets as possible when it is safe to do so. Most of the time the player will want to hover around the president. Constantly it will benefit the player to press DOWN on the arrow keys in order to move quicker and block incoming bullets.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+It is up to one square to protect the future president from any incoming attacks. Unfortunatly it seems like nobody likes this candidate. So the president needs constant protection from gunfire. Move as quick as you can to protect the president for as long as you can. I really don't think this guy was meant for this world.
+</li>
+
+<li><strong>Target Audience:</strong>
+This game targets teenagers to young adults who enjoy quick reflex games.
+</li>
+
+<li><strong>Play Time:</strong>
+Takes about 10 seconds to play one round.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
