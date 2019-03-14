@@ -37,6 +37,7 @@ var score = 0;
 var endScore;
 
 var cursors;
+var leftKey, rightKey, jumpKey, downKey;
 var rKey;
 
 var president;
@@ -99,6 +100,13 @@ BasicGame.Game.prototype = {
         //Set up the Player Controls
         cursors = this.game.input.keyboard.createCursorKeys();
         cursors.up.onDown.add(PlayerJump, this);
+
+        leftKey = this.game.input.keyboard.addKey(Phaser.Keyboard.A);
+        rightKey = this.game.input.keyboard.addKey(Phaser.Keyboard.D);
+        jumpKey = this.game.input.keyboard.addKey(Phaser.Keyboard.W);
+        jumpKey.onDown.add(PlayerJump, this);
+        downKey = this.game.input.keyboard.addKey(Phaser.Keyboard.S);
+
         rKey = this.game.input.keyboard.addKey(Phaser.Keyboard.R);
         rKey.onDown.add(this.ResetGame, this);
         
@@ -233,7 +241,7 @@ BasicGame.Game.prototype = {
 };
 
 function MovePlayer(){
-    if(cursors.left.isDown){
+    if(cursors.left.isDown || leftKey.isDown){
         //Ground Movement
         if(player.body.velocity.x > -MAXmoveSpeed && player.body.blocked.down){
             if(player.body.velocity.x > 0){ //Allows for pivot turns when grounded
@@ -252,7 +260,7 @@ function MovePlayer(){
         }
         player.play('left', true);
     }
-    else if(cursors.right.isDown){
+    else if(cursors.right.isDown || rightKey.isDown){
         //Ground Movement
         if(player.body.velocity.x < MAXmoveSpeed && player.body.blocked.down){
             if(player.body.velocity.x < 0){ //Allows for pivot turns when grounded
@@ -283,7 +291,7 @@ function MovePlayer(){
         }
         player.play('idle', true);
     }
-    if(cursors.down.isDown && !player.body.touching.down){
+    if(cursors.down.isDown && !player.body.touching.down || downKey.isDown && !player.body.touching.down){
         player.body.velocity.y = 600;
     }
 }
