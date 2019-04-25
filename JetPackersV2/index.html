@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Phaser Basic Project Template</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>JetPackers</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The mechanic of the game is unique. The sole purpose of the game is to fly around and try to slam the opponent into spikes.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The game will randomly spawn spikes around the borders of the map and work on timers. Spikes have multiple phases:
+1) The spike moves to an initial position
+2) Waits for a few seconds
+3) Fires the spike
+
+The game also has a separate timer to retract walls of spikes along the borders of the game. It can randomly choose between how many world bounds will be used. These spikes work similarly to the previously mentioned ones but they do not fire. Instead they detract behind the world bounds after a few seconds.
+
+I also put effort towards animating the background, which is also on timer events
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned an absurd amount of stuff.
+
+P2 physics:
+	I wanted to use P2 physics to make the spikes have a proper hitbox. I managed to accomplish this initially but eventually reverted the spikes back to arcade physics. P2 can do a lot of things but it definitely isn't arcade physics. P2 can't check for sprite overlaps and Phaser doesn't like to check for separate physic systems interacting with each other. Also, P2 doesn't have the same properties as arcade. If I switched the player's physics to P2, I would then have to make physic materials and alter some functions to cooperate and I just didn't have the time to really invest this kind of commitment.
+
+Timer Events:
+	This saved me so much headache when trying to make objects work on timers. It's awesome that I don't have to write a system that generates new timers and instead I can just add events and set delay times for functions.
+
+Polish:
+	I probably focused way too much on making the game look 'good'. I prioritized art over making the game more playable. So there are still the same issues of controllers not working when refreshing the page and the game doesn't have a replay button or win screen. 
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: ripped from professor</li>
+<li>Puppy image: ripped from professor</li>
+<li>All of the game's art assets were created by me in photoshop</li>
+<li><a href="http://soundbible.com/1980-Swords-Collide.html">Swords Collide</a></li>
+<li><a href="http://soundbible.com/1989-Gun-Cocking-Slow.html">Gun Cocking Slow</a></li>
+<li><a href="https://freesound.org/people/RSilveira_88/sounds/216312/">Gunshot</a></li>
+<li><a href="http://soundbible.com/1454-Pain.html">Pain Sound</a></li>
+<li><a href="http://soundbible.com/1498-Rocket.html">Rocket Sound</a></li>
+<li><a href="http://soundbible.com/2069-Realistic-Punch.html">Realistic Punch</a></li>
+<li>Music: <a href="http://www.twinmusicom.org/download_file?fileid=232">NES BOSS</a></li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+This game is sorta like that one mini-game from Mario Party where everyone is standing on a ball and the objective is to bump into eachother and knock other players off the map. This game is like that except more difficult.
+</li>
+
+<li><strong>High Concept:</strong>
+A 2-player competitive game where you fly around with a rocket jet and try to bump the opposing player into spikes.
+</li>
+
+<li><strong>Theme:</strong>
+I have no idea what storymatic theme this is.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This prototype is testing the limits of physic systems and utilizing them in unique ways.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel competitive with their friends. This is supposed to be a fun game with interesting and fun controls.
+</li>
+
+<li><strong>Gameplay:</strong>
+This game utilizes the XBOX 360 controllers
+Players can:
+	Move/Aim with the left-analog stick
+	Holding down X will propel the player in the direction the stick is
+
+Bumping into enemy players will cause the player to bounce off eachother.
+Spikes will appear and move across the screen, AVOID HITTInG THESE
+</li>
+
+<li><strong>Strategies:</strong>
+The player must rely on their intuition when playing this game. Sometimes it's a good idea to slam right towards someone. Other times it may be wise to avoid the spikes. It's up to the player to decide how risky they want to play the game.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+You and some other cube-person are trapped in an on-going battle to appease a floating eye ball god. Fight CUBE, FIGHT!!!!!
+</li>
+
+<li><strong>Target Audience:</strong>
+This game is for anybody who wants to play a fun competitive game with a friend.
+</li>
+
+<li><strong>Play Time:</strong>
+About 5 minutes
+</li>
+
+</ul>
+</div>
+</body>
+</html>
