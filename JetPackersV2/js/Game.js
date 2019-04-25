@@ -408,12 +408,6 @@ BasicGame.Game.prototype = {
 
     },
 
-    render: function(){
-        for(var i = 0; i < spikes.children.length; i++){
-            this.game.debug.body(spikes.children[i]);
-        }
-    },
-
     setSpike: function (spike, quad){
         if(quad === 0)
             spike.body.velocity.y = 50;
